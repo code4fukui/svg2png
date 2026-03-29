@@ -1,4 +1,5 @@
-import { Resvg } from 'npm:@resvg/resvg-js'
+import { Resvg } from "npm:@resvg/resvg-js";
+import font from "./MPLUS1p-Regular.ttf.js";
 
 const defaultOpts = {
   background: "#ffffff", //'rgba(238, 235, 230, .9)',
@@ -7,7 +8,8 @@ const defaultOpts = {
     value: 1200,
   },
   font: {
-    fontFiles: ['./MPLUS1p-Regular.ttf'], // Load custom fonts.
+    //fontFiles: ['./MPLUS1p-Regular.ttf'], // Load custom fonts.
+    fontBuffers: [font], // Load custom fonts from buffer
     loadSystemFonts: false, // It will be faster to disable loading system fonts.
     defaultFontFamily: 'M PLUS 1p',
   },
