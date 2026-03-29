@@ -10,6 +10,12 @@ const png = svg2png(svg);
 console.log(png);
 ```
 
+## how to build
+
+```sh
+deno run -A https://code4fukui.github.io/bin2js/bin2js.js ./MPLUS1p-Regular.ttf
+```
+
 ## reference
 
 - lib: [Resvg](https://github.com/thx/resvg-js)
